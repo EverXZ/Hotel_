@@ -86,3 +86,10 @@ TextField#idField, TextField#emailField, TextField#passwordField {
     -fx-padding: 10px 20px;
     -fx-pref-width: 342px;
 }
+.boldLabelButton {
+    -fx-background-color: transparent;
+    -fx-text-fill: black;  /* Cambia el color del texto según tu preferencia */
+    -fx-font-weight: bold;
+    -fx-cursor: hand;  /* Cambia el cursor al pasar el ratón por encima */
+    -fx-padding: 0;
+}

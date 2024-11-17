@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" stylesheets="@../Css/login.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.LogInController">
+    <children>
+        <ImageView fitHeight="663.0" fitWidth="994.0" pickOnBounds="true" preserveRatio="false" smooth="true">
+            <image>
+                <Image url="@../Sources/login_image.jpg" />
+            </image>
+        </ImageView>
+        <Pane layoutY="14.0" prefHeight="50.0" prefWidth="100.0" styleClass="backPane" stylesheets="@../Css/login.css">
+            <children>
+                <Button layoutX="29.0" layoutY="13.0" mnemonicParsing="false" styleClass="backButton" stylesheets="@../Css/login.css" text="Back" />
+            </children>
+        </Pane>
+        <Pane id="Pane" layoutX="272.0" layoutY="106.0" prefHeight="450.0" prefWidth="450.0" styleClass="mainPane" stylesheets="@../Css/login.css">
+            <children>
+                <Button fx:id="registerButton" layoutX="54.0" layoutY="332.0" prefWidth="342" styleClass="Button" stylesheets="@../Css/login.css" text="Iniciar Sesión" />
+                <Label id="titleLabel" layoutX="148.0" layoutY="28.0" style="-fx-background-position: center;" styleClass="titleLabel" stylesheets="@../Css/login.css" text="Iniciar Sesión" />
+                <Label layoutX="0.0" layoutY="63.0" styleClass="subTitleLabel" stylesheets="@../Css/login.css" text="Vuelve a tu espacio favorito" />
+                <Label layoutX="61.0" layoutY="127.0" stylesheets="@../Css/login.css" text="Correo Electrónico" />
+                <Label layoutX="61.0" layoutY="225.0" stylesheets="@../Css/login.css" text="Contraseña" />
+                <Label layoutX="172.0" layoutY="378.0" styleClass="termsLabel" stylesheets="@../Css/login.css" text="¿No eres cliente?" />
+                <!-- Reemplaza el Label por un Button estilizado -->
+                <Button layoutX="190.0" layoutY="395.0" mnemonicParsing="false" styleClass="boldLabelButton" stylesheets="@../Css/login.css" text="Regístrate" />
+                <TextField fx:id="emailField" layoutX="54.0" layoutY="158.0" promptText="Escribe tu correo" stylesheets="@../Css/login.css" />
+                <TextField fx:id="passwordField" layoutX="54.0" layoutY="256.0" promptText="Escribe tu contraseña" stylesheets="@../Css/login.css" />
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

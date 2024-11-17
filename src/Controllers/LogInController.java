@@ -11,17 +11,11 @@ import javafx.scene.control.TextField;
  * FXML Controller class
  * @author Jesús Hernández
  */
-public class RegisterController implements Initializable {
+public class LogInController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         
-    }
-    @FXML
-    private TextField firstNameField;
-    @FXML
-    private TextField lastNameField;
-    @FXML
-    private TextField idField;
+    }    
     @FXML
     private TextField emailField;
     @FXML
